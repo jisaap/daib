@@ -45,14 +45,14 @@ class ModalContent extends React.Component {
             <div className="Modal">    
                 <div className="content">
                     <form className="writeContent">
-                            <input type="text" name="nickName" id="nickName" className="modalNn" placeholder="닉네임을 입력해 주세요." onChange={this.appChange} />
-                            <textarea name="content" id="content" className="modalCt" placeholder="본문 내용을 입력해 주세요." />
-                        </form>
+                        <input type="text" name="nickName" id="nickName" className="modalNn" placeholder="닉네임을 입력해 주세요." onChange={this.appChange} />
+                        <textarea name="content" id="content" className="modalCt" placeholder="본문 내용을 입력해 주세요." />
+                    </form>
                     <div className="button-wrap">
                     <button type="submit" value="content" onClick={this.setContent}> Confirm </button>
                     </div>
-                    </div>
                 </div>
+            </div>
         )
     }
 
