@@ -17,55 +17,84 @@
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
-     width: 40vw;
+     width: 50vw;
+     height: 60vh;
      border-radius: 10px;
      box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
      z-index: 999;
      margin-left: 16px;
      margin-right: 16px;
- 
-}
-.Modal > :first-child {
-    margin-top: 16px;
-}
-     
-.content{
+     background-color: #999;
+    }
+    .Modal > :first-child {
+        margin-top: 14px;
+    }
+    
+    .content{
+    color: #999;
+    height: 93%;
+    width: 96%;
     margin-top: 10px;
 }  
+
 .content > input{
     margin: 10px;
     padding: 8px;
     font-size: 12pt;
-    color: #999;
+    height: 80%;
 }
+
+.writeContent {
+    height: 90%;
+}
+
+.modalNn{
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    width: 99%;
+    height: 12%;
+    font-size: 20px;
+}
+
+.modalCt {
+    border-radius: 0 0 5px 5px;
+    margin-top: 2%;
+    width: 99%;
+    height: 85%;
+}
+
 .button-wrap{
          margin: 0;
          margin-top: 8px;
 }
+
 .button-wrap > button{
+    height: 10%;
     width: 100%;
     padding: 12px 0;
     border-radius: 0 0 10px 10px;
-    background-color: #ad7cef;
+    background-color: teal;
     font-size: 16pt;
     color: white;
     border: 0;
     cursor: pointer;
 }
+
 .button-wrap > :hover {
-    background-color: #7f49c8;
+    background-color: #0e463b;
 }
+
 .button-wrap > :active {
-    background-color: #7e49c8;
+    background-color: #0e463b;
 }
-   .container_log {
-     display:grid;
-     width: 100%;
-     margin: 0 !important;
-     height: 100%;
-     grid-template-columns: 1fr 1fr;
-     column-gap: 1%;
-     
+
+.container_log {
+    display:grid;
+    width: 100%;
+    margin: 0 !important;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1%;   
 }
           
 p {

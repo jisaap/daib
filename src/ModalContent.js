@@ -26,19 +26,15 @@ class ModalContent extends React.Component {
             "content": {content}.content,
             "nickName" : {nickName}.nickName,
         };
-        let result = false;
         await axios.post(API_URL, data, Token)
         .then(function (response) {
             console.log("성공   " + response);
-            result = true;
         })
         .catch(function(err) {
             console.log("실패" + err);
-            result = false;
+            alert("문제가 발생하여 정상적으로 게시물이 올라가지 않았습니다.");
         });
-        if(result){
             this.props.close();
-        }
     }
 
     
@@ -48,18 +44,11 @@ class ModalContent extends React.Component {
         return(
             <div className="Modal">    
                 <div className="content">
-                    <form>
-                        <label>
-                            NickName:
-                            <input type="text" name="nickName" id="nickName" onChange={this.appChange} />
-                        </label>
-                        <label>
-                            Content:
-                            <input type="text" name="content" id="content" onChange={this.appChange} />
-                        </label>
+                    <form className="writeContent">
+                            <input type="text" name="nickName" id="nickName" className="modalNn" placeholder="닉네임을 입력해 주세요." onChange={this.appChange} />
+                            <textarea name="content" id="content" className="modalCt" placeholder="본문 내용을 입력해 주세요." />
                         </form>
                     <div className="button-wrap">
-                    {/* <button type="submit" value="content" onClick={this.props.close}> Confirm </button> */}
                     <button type="submit" value="content" onClick={this.setContent}> Confirm </button>
                     </div>
                     </div>

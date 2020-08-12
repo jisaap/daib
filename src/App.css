@@ -31,3 +31,18 @@ body {
   margin: 2%;
   background-color: gray;
 }
+
+.modalBtn {
+  color: white;
+  background: teal;
+  padding: .375rem .75rem;
+  border: 1px solid teal;
+  border-radius: .25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  position: relative;
+  top: 50px;
+  left: 85%;
+  margin-right: 3%;
+  z-index: 10;
+}
