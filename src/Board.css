@@ -1,0 +1,15 @@
+.board_content {
+    justify-content: center;
+}
+.board_content > div {
+    display: grid;
+    display: inline-grid;
+    grid-template-columns: 5fr;
+    margin: 2%;
+    width: 15%;
+}
+
+.ver{
+    text-align: right;
+}
+
